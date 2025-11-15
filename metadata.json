@@ -1,0 +1,5 @@
+{
+  "description": "A simple photo editor to apply blur and fade effects to your images. Upload a photo and easily add beautiful blur and gradient fade effects.",
+  "requestFramePermissions": [],
+  "name": "Blur & Fade"
+}

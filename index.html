@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blur & Fade Photo Editor</title>
+    <meta name="description" content="A simple photo editor to apply blur and fade effects to your images. Upload a photo and easily add beautiful blur and gradient fade effects." />
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjogcmdiKDEyOSwgMTQwLCAyNDgpOyBzdG9wLW9wYWNpdHk6IDEiIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjogcmdiKDk5LCAxMDIsIDI0MSk7IHN0b3Atb3BhY2l0eTogMSIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIgZmlsbD0idXJsKCNncmFkMSkiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIxNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjkpIi8+PC9zdmc+">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjogcmdiKDEyOSwgMTQwLCAyNDgpOyBzdG9wLW9wYWNpdHk6IDEiIC8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjogcmdiKDk5LCAxMDIsIDI0MSk7IHN0b3Atb3BhY2l0eTogMSIgLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0NSIgZmlsbD0idXJsKCNncmFkMSkiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIxNSIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjkpIi8+PC9zdmc+">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- StackBlur is required for the blur effect -->
+    <script src="https://cdn.jsdelivr.net/npm/stackblur-canvas@2.6.0/dist/stackblur.min.js"></script>
+    <!-- FFmpeg is required for reliable video processing. Version must match @ffmpeg/core -->
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/umd/ffmpeg.js"></script>
+    <style type="text/tailwindcss">
+        body {
+            /* Apply a dark background to prevent flash of white on load */
+            background-color: #111827; /* Corresponds to bg-gray-900 */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
